@@ -1,4 +1,4 @@
-SWAPI GraphQL Wrapper
+GRAPHQL DEMO SITE
 =====================
 
 A wrapper around [SWAPI](http://swapi.co) built using GraphQL converting it into [this schema](schema.graphql).
