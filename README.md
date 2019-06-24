@@ -18,6 +18,14 @@ Install dependencies with
 npm install
 ```
 
+## SWAPI Wrapper
+
+The SWAPI wrapper is in `./swapi`. It can be tested with:
+
+```sh
+npm test
+```
+
 ## Local Server
 
 A local express server is in `./server`. It can be run with:
@@ -27,4 +35,4 @@ npm run build # Only if you changed something
 npm start
 ```
 
-A GraphiQL instance will be opened at http://localhost:xxxx/ (the actual port number will be printed to the console) to explore the API.
+A GraphiQL instance will be opened at http://localhost:8080/ (or similar; the actual port number will be printed to the console) to explore the API.

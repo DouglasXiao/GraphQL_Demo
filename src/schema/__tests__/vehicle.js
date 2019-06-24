@@ -126,20 +126,4 @@ describe('Vehicle type', async () => {
       nextResult.data.allVehicles.edges.map(e => e.node.name),
     ).to.deep.equal(['X-34 landspeeder', 'TIE/LN starfighter']);
   });
-
-  it('vehicles first 2 calls test with swapi', async () => {
-    const query = `{
-      allVehicles(first: 2) { vehicles {name, model, vehicleClass} }
-    }`;
-    const result = await swapi(query);
-
-    expect(result.data.allVehicles.vehicles.map(v => v.model)).to.deep.equal([
-      'Digger Crawler',
-      'T-16 skyhopper',
-    ]);
-
-    expect(
-      result.data.allVehicles.vehicles.map(v => v.vehicleClass),
-    ).to.deep.equal(['wheeled', 'repulsorcraft']);
-  });
 });

@@ -1,17 +1,12 @@
 {
-  "name": "swapi-graphql",
+  "name": "GraphQL_Demo",
   "description": "A GraphQL wrapper for swapi.com",
-  "contributors": [
-    ""
-  ],
+  "contributors": [],
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/graphql/swapi-graphql",
-  "bugs": {
-    "url": "https://github.com/graphql/swapi-graphql/issues"
-  },
+  "homepage": "https://github.com/DouglasXiao/GraphQL_Demo.git",
   "repository": {
     "type": "git",
-    "url": "http://github.com/graphql/swapi-graphql.git"
+    "url": "https://github.com/DouglasXiao/GraphQL_Demo.git"
   },
   "engines": {
     "node": ">=6.0.0"
