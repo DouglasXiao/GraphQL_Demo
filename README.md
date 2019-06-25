@@ -26,6 +26,7 @@ A GraphiQL instance will be opened at http://localhost:xxxx/ (the actual port nu
 Send out the queries, there are several schemas to use with (Paste one of the following schemas into the left column and click on the PLAY button on left up corner): 
 
 ### film schema
+```
 {
   allFilms
   {
@@ -40,6 +41,7 @@ Send out the queries, there are several schemas to use with (Paste one of the fo
     }
   }
 }
+```
 
 ### person schema
 {
@@ -150,9 +152,9 @@ Send out the queries, there are several schemas to use with (Paste one of the fo
 }
 
 ### How to use the buttons (From left to right)
-Play button: to fulfill the queries in left column and show responses in the right column
-Prettify button: to prettify the JSON format.
-History button: click on the History button so that you can see the history queries you have been made.
+* Play button: to fulfill the queries in left column and show responses in the right column
+* Prettify button: to prettify the JSON format.
+* History button: click on the History button so that you can see the history queries you have been made.
 
 References:
 
