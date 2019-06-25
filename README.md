@@ -165,8 +165,24 @@ Send out the queries, there are several schemas to use with (Paste one of the fo
 * Play button: to fulfill the queries in left column and show responses in the right column
 * Prettify button: to prettify the JSON format.
 * History button: click on the History button so that you can see the history queries you have been made.
+* Docs button: Can check the schema types in the search bar, for example, input allFilms.
 
 ### Technologies involved in this website
+* Based on the GraphQL HTTP Server middleware to render the whole page, use Express to load the graphiql page:
+```
+import express from 'express';
+import graphqlHTTP from 'express-graphql';
+
+const app = express();
+
+app.use(
+  '/',
+  graphqlHTTP(() => ({
+    schema: swapiSchema,
+    graphiql: true,
+  })),
+);
+```
 * Use Node.js to assign local port and start local server.
 * Listening to user's input JSON in local port.
 * When get the input JSON, decode from Root node, like allVehicles. The local graphql schema resolvers decode each field to get id string and type string.
